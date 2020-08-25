@@ -1,0 +1,9 @@
+<h2>{{@title}}</h2>
+
+<ul>
+  {{#each @company as |comp|}}
+    <li>
+         <button type="button" {{on 'click' (fn this.showCompany comp)}}>{{comp}}</button>
+    </li>
+  {{/each}}
+</ul>

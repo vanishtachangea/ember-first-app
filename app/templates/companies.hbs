@@ -1,0 +1,12 @@
+{{!-- <h2>List of Companies applied to</h2>
+
+<ul>
+  {{#each @model as |company|}}
+    <li>{{company}}</li>
+  {{/each}}
+</ul> --}}
+
+<CompaniesList
+  @title="List of companies"
+  @company={{@model}}
+/>
